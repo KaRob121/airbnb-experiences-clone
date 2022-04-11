@@ -16,7 +16,8 @@
 .main--hero-image {
   margin: 30px 0;
   width: 80%;
-  margin: 35px auto;
+  max-width: 750px;
+  align-self: center;
 }
 
 .main--heading {
@@ -29,4 +30,41 @@
   margin-left: 25px;
 }
 
+.card {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.card > p {
+  margin: 0 auto;
+}
+
+.card--image-section {
+  position: relative;
+}
+
+.card--status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.card--rating-text {
+  display: flex;
+  align-items: center;
+}
+
+.card--rating-text > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card--star {
+  width: 16px;
+  height: 16px;
+}
 
