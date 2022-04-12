@@ -1,19 +1,18 @@
-import expImage from '../images/image 12.png'
 import star from '../images/Star 1.png'
 
-function Card () {
+function Card(props) {
   return (
     <div className="card">
       <div className="card--image-section">
-        <img className="card--image" src={expImage} />
+        <img className="card--image" src={`./images/${props.img}`} />
         <p className="card--status">SOLD OUT</p>
       </div>
       <div className="card--rating-text">
         <img className="card--star" src={star} />
-        <p>5.0 (6) · USA</p>
+        <p>{props.rating} ({props.reviewCount}) · {props.country}</p>
       </div>
-      <p>Life lessons with Katie Zaferes</p>
-      <p><strong>From $136</strong> / person</p>
+      <p>{props.title}</p>
+      <p><strong>From ${props.price}</strong> / person</p>
     </div>
   ) 
 }
