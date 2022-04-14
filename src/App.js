@@ -12,12 +12,14 @@ function App() {
         img={experience.coverImg}
         rating={experience.stats.rating}
         reviewCount={experience.stats.reviewCount}
-        country={experience.location}
+        location={experience.location}
         title={experience.title}
         price={experience.price}
+        openSpots={experience.openSpots}
       />
     )
   })
+
   return (
     <div className="App">
       <Navbar />
