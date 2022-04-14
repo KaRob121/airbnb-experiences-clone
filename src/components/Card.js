@@ -11,8 +11,8 @@ function Card(props) {
         <img className="card--star" src={star} />
         <p>{props.rating} ({props.reviewCount}) · {props.country}</p>
       </div>
-      <p>{props.title}</p>
-      <p><strong>From ${props.price}</strong> / person</p>
+      <p className="card--title">{props.title}</p>
+      <p className="card--price"><strong>From ${props.price}</strong> / person</p>
     </div>
   ) 
 }
