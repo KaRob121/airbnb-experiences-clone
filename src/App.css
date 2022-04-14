@@ -33,10 +33,15 @@
 .card {
   margin-top: 25px;
   margin-left: 25px;
+  width: 250px;
 }
 
 .card > p {
   margin: 0 auto;
+}
+
+.card--image {
+  width: 100%;
 }
 
 .card--image-section {
